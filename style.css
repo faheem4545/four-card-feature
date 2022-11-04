@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+.header {
+  padding: 3rem;
+  text-align: center;
+}
+.header h1 {
+  color: darkgray;
+  font-size: 1.5rem;
+}
+.header p {
+  font-size: 1.5rem;
+}
+#para {
+  color: darkgray;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem;
+}
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.supervisor {
+  grid-area: 2/1;
+  border-top-style: solid;
+  border-top-width: 3px;
+  border-top-color: hsl(180, 62%, 55%);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  margin-top: -7rem;
+  padding: 1rem;
+  text-align: center;
+}
+.team-builder {
+  border-top-style: solid;
+  border-top-width: 3px;
+  border-top-color: hsl(0, 78%, 62%);
+  grid-area: 2/2;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  padding: 1rem;
+  text-align: center;
+}
+.karma {
+  border-top-style: solid;
+  border-top-width: 3px;
+  border-top-color: hsl(34, 97%, 64%);
+  grid-area: 1/2;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  padding: 1rem;
+  text-align: center;
+}
+.calculator {
+  border-top-style: solid;
+  border-top-width: 3px;
+  border-top-color: hsl(212, 86%, 64%);
+  grid-area: 2/3;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  padding: 1rem;
+  margin-top: -7rem;
+  text-align: center;
+}
+.img__left {
+  width: 20%;
+  height: 50%;
+  margin-left: 14rem;
+  margin-top: 1rem;
+}
+.para__graph {
+  font-size: 1rem;
+  color: darkgray;
+  font-weight: 100;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 2rem;
+  }
+  .supervisor {
+    grid-area: 1/1;
+    margin-top: 0;
+  }
+  .team-builder {
+    grid-area: 2/1;
+  }
+  .karma {
+    grid-area: 3/1;
+  }
+  .calculator {
+    grid-area: 4/1;
+    margin-top: 0;
+  }
+  .img__left {
+    width: 20%;
+    height: 50%;
+    margin-left: 14rem;
+    margin-top: 1rem;
+  }
+  .para__graph {
+    font-size: 1rem;
+    color: darkgray;
+    font-weight: 100;
+    line-height: 1.5;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
